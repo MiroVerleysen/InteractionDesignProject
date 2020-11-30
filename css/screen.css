@@ -252,6 +252,14 @@ input::placeholder {
     width: 100vw;
 }
 
+.c-grid {
+    padding: 60px;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 2fr) );
+    color: var(--color-light);
+}
+
 /*------------------------------------*\
 #COMPONENTS
 \*------------------------------------*/
