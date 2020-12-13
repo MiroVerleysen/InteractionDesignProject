@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl" class="landingpage">
 
 <head>
     <title>Park-Check</title>
@@ -10,22 +10,44 @@
     <link rel="stylesheet" href="https://use.typekit.net/whd4hfy.css">
     <script src="script/app.js"></script>
     <script src="script/dataHandler.js"></script>
+    <script src="script/validation.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#006db0">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
 </head>
-<body>
-    <div class="c-grid">
+<div class="c-grid">
+    <div>
+        <h1 class="landingpage_title">Park-Check</h1>
         <div>
-            <h1>Park-Check</h1>
-            <div>
-                <h2>Nooit meer parkeerstress!</h2>
-                <p>Dankzij Park-Check kunt u voor goed dag zeggen tegen parkeerstress. Plan je een uitstap naar Gent? Kijk dan vlug op Park-Check en zie in een oogopslag waar nog plaats is om uw voertuig te plaatsen.</p>
-                <form action="">
-                    <label for="email">Enter your email:</label>
-                    <input required type="email" id="email" name="email">
-                    <input type="submit">
-                  </form>
-            </div>
+            <h2 class="landingpage_subtitle">Nooit meer parkeerstress!</h2>
+            <p>Dankzij Park-Check kunt u voor goed dag zeggen tegen parkeerstress. Plan je een uitstap naar Gent? Kijk
+                dan vlug op Park-Check en zie in een oogopslag waar nog plaats is om uw voertuig te plaatsen.</p>
+            <form action="">
+                <div class="">
+                    <label class="js-email-label" for="email"> <b>Blijf op de hoogte:</b>
+                        <span class="c-label__error-message js-email-error-message">
+                            Dit veld is verplicht
+                        </span>
+                    </label>
+                    <input class="c-email js-email-input js-email-field" required type="email" placeholder="Email"
+                        id="email" name="email">
+                </div>
+                <input class="c-button js-sign-in-button" type="submit" value="Ontvang updates">
+                <div>
+                    <span class="c-label__success js-success-message" id="success">
+                        Succesvol verzonden
+                    </span>
+                </div>
+            </form>
         </div>
-        <img src="img/mockups.png" alt="Iphone preview">
     </div>
+    <img src="img/mockups.png" alt="Iphone preview">
+</div>
+
 </body>
+
 </html>

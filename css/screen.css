@@ -12,6 +12,12 @@
     --color-dark: #464646;
     --color-front: var(--color-dark);
     --color-back: var(--color-light);
+
+    --global-color-error: #FF3333;
+    --global-color-error-x-transparent: #FF33334d;
+
+    --global-input-error-borderColor: var(--global-color-error);
+    --global-input-error-boxShadowColor: var(--global-color-error-x-transparent);
     /* transitions */
     /*Size */
     --standaard: 1rem
@@ -99,7 +105,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1,625rem;
+    font-size: 1, 625rem;
     line-height: 2rem;
     margin: 0 0 1.5rem;
 }
@@ -252,24 +258,106 @@ input::placeholder {
     width: 100vw;
 }
 
+/*------------------------------------*\
+#COMPONENTS
+\*------------------------------------*/
+
 .c-grid {
     padding: 60px;
     display: grid;
     grid-gap: 40px;
-    grid-template-columns: repeat( auto-fit, minmax(200px, 2fr) );
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    align-items: center;
+}
+
+
+.landingpage {
     color: var(--color-light);
 }
 
+.landingpage_subtitle {
+    color: white;
+}
+
+.c-email {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: 0.3125rem solid #006DB0;
+    border-radius: 1rem;
+    box-shadow:
+        inset 0 0 0.5rem rgba(0, 0, 0, 0.1),
+        0 0 1rem rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background: white;
+    margin: 0.5rem 0 0.3125rem 0;
+}
+
+.c-email:focus,
+.c-email:hover {
+    box-shadow: h-offset v-offset blur spread color;
+    box-shadow: 0 0 0 0.0625rem white;
+}
+
+.c-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: bolder;
+    border: none;
+    border-radius: 1rem;
+    color: #FFFFFF;
+    background-color: #006DB0;
+    height: 3rem;
+    margin: 0 0 10px 0;
+    padding: 1rem;
+}
+
+.c-button:focus,
+.c-button:hover {
+    box-shadow: h-offset v-offset blur spread color;
+    box-shadow: 0 0 0 0.0625rem white;
+}
+
+.c-button:active {
+    background-color: #1a8acf;
+}
+
+.c-label__error-message {
+    font-weight: 600;
+    float: right;
+    display: none;
+    color: red;
+}
+
+.c-label__error-message.is-visible {
+    display:block;
+    width: 100%;
+}
+.c-label__success {
+    font-weight: 600;
+    float: right;
+    display: none;
+    width: 100%;
+}
+
 /*------------------------------------*\
-#COMPONENTS
+#States
 \*------------------------------------*/
+
+.has-error {
+    border: 0.3125rem solid var(--global-input-error-borderColor);
+}
 
 .switch {
     position: absolute;
     display: inline-block;
     width: 3.75rem;
     height: 2.125rem;
-    top: 42rem;
+    top: 1rem;
     right: 1rem;
 }
 
