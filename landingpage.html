@@ -19,35 +19,34 @@
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
 </head>
-<div class="c-grid">
+<div class="c-grid__landing">
     <div>
         <h1 class="landingpage_title">Park-Check</h1>
-        <div>
-            <h2 class="landingpage_subtitle">Nooit meer parkeerstress!</h2>
-            <p>Dankzij Park-Check kunt u voor goed dag zeggen tegen parkeerstress. Plan je een uitstap naar Gent? Kijk
-                dan vlug op Park-Check en zie in een oogopslag waar nog plaats is om uw voertuig te plaatsen.</p>
-            <form action="">
-                <div class="">
-                    <label class="js-email-label" for="email"> <b>Blijf op de hoogte:</b>
-                        <span class="c-label__error-message js-email-error-message">
-                            Dit veld is verplicht
-                        </span>
-                    </label>
-                    <input class="c-email js-email-input js-email-field" required type="email" placeholder="Email"
-                        id="email" name="email">
-                </div>
-                <input class="c-button js-sign-in-button" type="submit" value="Ontvang updates">
-                <div>
-                    <span class="c-label__success js-success-message" id="success">
-                        Succesvol verzonden
-                    </span>
-                </div>
-            </form>
-        </div>
+        <h2 class="landingpage_subtitle">Nooit meer parkeerstress!</h2>
+        <p>Dankzij Park-Check kunt u voor goed dag zeggen tegen parkeerstress. Plan je een uitstap naar Gent? Kijk
+            dan vlug op Park-Check en zie in een oogopslag waar nog plaats is om uw voertuig te plaatsen.</p>
     </div>
-    <img src="img/mockups.png" alt="Iphone preview">
+    <div class="c-mockup-imageholder">
+        <img class="c-mockup-img" src="img/mockups.png" alt="Iphone preview">
+    </div>
+    <div>
+        <form action="">
+            <label class="js-email-label" for="email"> <b>Blijf op de hoogte:</b>
+                <span class="c-label__error-message js-email-error-message">
+                    Dit veld is verplicht
+                </span>
+            </label>
+            <input class="c-email js-email-input js-email-field" required type="email" placeholder="Email" id="email"
+                name="email">
+            <input class="c-button js-sign-in-button" type="submit" value="Ontvang updates">
+            <div>
+                <span class="c-label__success js-success-message" id="success">
+                    Succesvol verzonden
+                </span>
+            </div>
+        </form>
+    </div>
 </div>
-
 </body>
 
 </html>
